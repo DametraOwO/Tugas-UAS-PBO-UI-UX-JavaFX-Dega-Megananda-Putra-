@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uaspbo.LoginController">
+   <children>
+      <AnchorPane fx:id="signin_form" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="bg-form" stylesheets="@../CSS/Login.css">
+         <children>
+            <TextField fx:id="signin_username" layoutX="72.0" layoutY="188.0" prefHeight="25.0" prefWidth="174.0" promptText="Username" styleClass="textield" />
+            <PasswordField fx:id="signin_password" layoutX="72.0" layoutY="244.0" prefHeight="25.0" prefWidth="174.0" promptText="Password" styleClass="textield" />
+            <Button fx:id="signin_loginBtn" layoutX="135.0" layoutY="291.0" mnemonicParsing="false" onAction="#signin" prefHeight="25.0" prefWidth="49.0" text="Login" />
+            <ImageView fx:id="sigin_dokter" fitHeight="400.0" fitWidth="268.0" layoutX="402.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../Scene/pexels-cottonbro-studio-5722164.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="signin_logo" fitHeight="104.0" fitWidth="104.0" layoutX="107.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Scene/Logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="logo_user" fitHeight="25.0" fitWidth="28.0" layoutX="31.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Scene/Profile.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="logo_pass" fitHeight="25.0" fitWidth="28.0" layoutX="27.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Scene/Password.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="104.0" layoutY="139.0" text="PUSKESMAS">
+               <font>
+                  <Font name="Bodoni MT" size="18.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="signin_createAccount" layoutX="115.0" layoutY="337.0" onAction="#switchForm" text="Buat Akun Baru" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="signUp_form" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="bg-form" stylesheets="@../CSS/Login.css">
+         <children>
+            <TextField fx:id="signUp_username" layoutX="379.0" layoutY="239.0" prefHeight="25.0" prefWidth="174.0" promptText="Username" styleClass="textield" />
+            <PasswordField fx:id="signUp_password" layoutX="379.0" layoutY="276.0" prefHeight="25.0" prefWidth="174.0" promptText="Password" styleClass="textield" />
+            <Button fx:id="signUp_btn" layoutX="426.0" layoutY="317.0" mnemonicParsing="false" onAction="#signup" text="Daftar" />
+            <ImageView fx:id="signUp_dokter" fitHeight="400.0" fitWidth="418.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Scene/pexels-cottonbro-studio-5722164.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="signUp_logo" fitHeight="104.0" fitWidth="104.0" layoutX="398.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Scene/Logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="logo_username" fitHeight="25.0" fitWidth="28.0" layoutX="337.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Scene/Profile.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="logo_password" fitHeight="25.0" fitWidth="28.0" layoutX="332.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Scene/Password.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="395.0" layoutY="152.0" text="PUSKESMAS">
+               <font>
+                  <Font name="Bodoni MT" size="18.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="signUp_login" layoutX="377.0" layoutY="348.0" onAction="#switchForm" text="Sudah Punya Akun? Login" textFill="WHITE" />
+            <TextField fx:id="signUp_email" layoutX="379.0" layoutY="200.0" prefHeight="26.0" prefWidth="174.0" promptText="Email" styleClass="textield" />
+            <ImageView fitHeight="22.0" fitWidth="25.0" layoutX="337.0" layoutY="202.0">
+               <image>
+                  <Image url="@../Scene/pngwing.com.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

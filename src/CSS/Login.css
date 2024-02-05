@@ -1,0 +1,88 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jan 22, 2024, 2:13:37 PM
+    Author     : DametraOwO
+*/
+
+.bg-form {
+    -fx-background-color: linear-gradient(to top, #5DADE2, #FFFFFF);
+}
+
+.background{
+    -fx-background-color:linear-gradient(to top,#5DADE2, #00FFAA );
+}
+
+.textield{
+    -fx-background-color:transparent;
+    -fx-text-inner-color:#515A5A;
+    -fx-border-width:0px 0px .4px 0px;
+    -fx-border-color:#515A5A;
+}
+
+.teks{
+    -fx-background-color:transparent;
+    -fx-text-inner-color:#FFFFFF;
+    -fx-border-width:0px 0px .4px 0px;
+    -fx-border-color:#FFFFFF;
+}
+.teks{
+    -fx-border-color: #FFFFFF;
+    -fx-border-width:1px 1px 1px 1px;
+}
+
+.textield{
+    -fx-border-color: #515A5A;
+    -fx-border-width:0px 0px 1px 0px;
+}
+
+.btn{
+    -fx-background-color:transparent;
+    -fx-text-color:#000000;
+}
+
+.background-reversed {
+    -fx-background-color: linear-gradient(to top, #00FFAA, #5DADE2);
+}
+
+.table-view {
+    -fx-table-cell-border-color: derive(-fx-control-inner-background, -10%);
+    -fx-table-cell-border-width: 0.5;
+    -fx-table-cell-border-style: solid;
+}
+
+.table-column {
+    -fx-alignment: CENTER;
+}
+
+.table-column-header {
+    -fx-background-color: #4CAF50; /* Warna latar header kolom */
+    -fx-text-fill: white;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f2f2f2; /* Warna latar setiap baris ganjil */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #0073e6; /* Warna latar baris yang dipilih */
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+.table-row-cell:filled:selected:hover {
+    -fx-background-color: #005bb5; /* Warna latar baris yang dipilih dan dihover */
+}
+
+.table-row-cell:filled:hover {
+    -fx-background-color: #e6f7ff; /* Warna latar baris yang dihover */
+}
+
+.table-cell {
+    -fx-border-color: #dddddd; /* Warna garis batas sel */
+    -fx-border-width: 0.5;
+    -fx-border-style: solid;
+    -fx-padding: 5;
+}
